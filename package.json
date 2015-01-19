@@ -1,0 +1,17 @@
+{
+  "name": "yomypopcorn-utils",
+  "version": "0.0.1",
+  "description": "Utilily functions used throughout YOMYPOPCORN apps",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/yomypopcorn/yomypopcorn-utils.git"
+  },
+  "contributors": [
+    "Max Kueng (http://maxkueng.com/contact)"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "pad": "0.0.8"
+  }
+}

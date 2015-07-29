@@ -16,3 +16,12 @@ exports.cb = function cb () {
 exports.sien = function sien (season, episode) {
 	return season * 1000 + episode;
 };
+
+exports.removeNonScalars = function (obj) {
+    function replacer (key, value) {
+      if (key && typeof value === 'object') { return undefined; }
+      return value;
+    }
+
+    return JSON.parse(JSON.stringify(obj, replacer));
+};

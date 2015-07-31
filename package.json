@@ -1,6 +1,6 @@
 {
-  "name": "yomypopcorn-utils",
-  "version": "1.0.0",
+  "name": "ympc-utils",
+  "version": "1.1.0",
   "description": "Utilily functions used throughout YOMYPOPCORN apps",
   "main": "index.js",
   "repository": {

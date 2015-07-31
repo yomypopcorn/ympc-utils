@@ -1,3 +1,4 @@
+var crypto = require('crypto');
 var pad = require('pad');
 
 exports.padTime = function padTime (time) {
@@ -25,3 +26,15 @@ exports.removeNonScalars = function (obj) {
 
     return JSON.parse(JSON.stringify(obj, replacer));
 };
+
+exports.generateUserToken = function (secret, username) {
+  return crypto
+    .createHash('sha1')
+    .update(username + secret)
+    .digest('hex')
+    .substr(0, 16);
+}
+
+exports.validateUserToken = function (secret, username, token) {
+  return exports.generateUserToken(username, secret) === token;
+}

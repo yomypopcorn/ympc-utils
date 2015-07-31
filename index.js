@@ -33,8 +33,8 @@ exports.generateUserToken = function (secret, username) {
     .update(username + secret)
     .digest('hex')
     .substr(0, 16);
-}
+};
 
 exports.validateUserToken = function (secret, username, token) {
   return exports.generateUserToken(username, secret) === token;
-}
+};

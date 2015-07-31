@@ -36,5 +36,5 @@ exports.generateUserToken = function (secret, username) {
 };
 
 exports.validateUserToken = function (secret, username, token) {
-  return exports.generateUserToken(username, secret) === token;
+  return exports.generateUserToken(secret, username) === token;
 };

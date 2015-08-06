@@ -1,0 +1,11 @@
+{
+  "name": "ympc-utils",
+  "version": "1.1.2",
+  "dependencies": {
+    "pad": {
+      "version": "0.0.8",
+      "from": "pad@*",
+      "resolved": "https://registry.npmjs.org/pad/-/pad-0.0.8.tgz"
+    }
+  }
+}
